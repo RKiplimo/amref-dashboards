@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amref Dashboards Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #ba0c2f;
+      margin-bottom: 40px;
+    }
+    .dashboard-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .dashboard-links a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #004b87;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .dashboard-links a:hover {
+      background-color: #002f5f;
+    }
+    @media (min-width: 600px) {
+      .dashboard-links {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Optional Logo -->
+  <img src="https://amref.org/wp-content/uploads/2020/10/amref-logo-300x95-1.png" alt="Amref Logo" class="logo">
+
   <h1>Amref Dashboards Portal</h1>
-  <ul>
-    <li><a href="https://amrefdashboards.shinyapps.io/MDR_Claims/" target="_blank">MDR Claims Dashboard</a></li>
-    <li><a href="https://amrefdashboards.shinyapps.io/BD_dashboard/" target="_blank">BD Dashboard</a></li>
-    <li><a href="https://amrefdashboards.shinyapps.io/Amref_Uganda/" target="_blank">Amref Uganda Dashboard</a></li>
-  </ul>
+
+  <div class="dashboard-links">
+    <a href="https://amrefdashboards.shinyapps.io/MDR_Claims/" target="_blank">MDR Claims Dashboard</a>
+    <a href="https://amrefdashboards.shinyapps.io/BD_dashboard/" target="_blank">BD Dashboard</a>
+    <a href="https://amrefdashboards.shinyapps.io/Amref_Uganda/" target="_blank">Amref Uganda Dashboard</a>
+  </div>
+
 </body>
 </html>
+
